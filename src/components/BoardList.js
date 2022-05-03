@@ -16,7 +16,6 @@ const BoardList = () => {
       const response = await axios.get(
         'http://localhost:8081/board/list'
       );
-      console.log(response.data);
       setDatas(response.data); // 데이터는 response.data 안에 들어있습니다.
     } catch (e) {
       setError(e);
