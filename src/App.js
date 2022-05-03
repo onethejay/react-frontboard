@@ -1,4 +1,5 @@
 import './App.css';
+import './statics/common.css';
 import React from "react";
 import { Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home';
@@ -39,7 +40,7 @@ function Footer() {
 
 function App() {
   return (
-    <div>
+    <div className="w3-center">
       <Header/>
       <Article/>
       <Footer/>
